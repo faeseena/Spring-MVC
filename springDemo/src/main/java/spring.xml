@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <context:annotation-config/>
+  <context:component-scan base-package="demo.fazi.springDemo"/>
+
+
+
+    <!-- bean definitions here -->
+    
+   <!--  loose coupling -->
+   
+  <!--   <bean id="Vehicle" class="demo.fazi.springDemo.Car">
+    <constructor-arg name="technology" value="java"></constructor-arg>
+   <constructor-arg name="duration" value="3"></constructor-arg>
+       <constructor-arg name="amount" value="30000"></constructor-arg>
+     
+    
+    </bean>-->
+    <!-- setter injection -->
+ <!--   <bean id="mon" class="demo.fazi.springDemo.Monitor" >
+    <property name="size" value="15"></property>
+    <property name="pixels" value="75"></property>
+    </bean>
+    <bean id="cmp" class="demo.fazi.springDemo.Computer">
+    <property name="Company" value="Dell"></property>
+    <property name="price" value="750000"></property> --> 
+    <!-- Constructor Injection -->
+ <!--  <property name="mn" ref="mon"></property>
+    
+    </bean> -->
+    </beans>
+
